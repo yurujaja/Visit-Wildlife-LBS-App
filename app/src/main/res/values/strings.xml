@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LBS Project</string>
+    <string name="arcGISAPIKey">AAPKb7983299d48641a2b186baa35537b8a4RMa8bcwcsCpfenhqeiib21dAe-wRSJdfkaZOlMPcvN7C-mRdFSxh8lvIy26BeEOz</string>
+    <string name="animalLocationURL">https://services1.arcgis.com/i9MtZ1vtgD3gTnyL/arcgis/rest/services/animalLocationData/FeatureServer/0</string>
+    <string name="userPositionURL">https://services1.arcgis.com/i9MtZ1vtgD3gTnyL/arcgis/rest/services/userPositionData/FeatureServer/0</string>
+    <string name="feature_added">Feature successfully added</string>
+    <string name="error_cannot_add_to_feature_table">Cannot add a feature to this feature table</string>
+    <string name="error_applying_edits">Exception applying edits on server: %s</string>
+    <string name="my_user_id">5</string>
+    <string name="toast_camera_permission">Camera permission is needed to run this application</string>
+    <string name="accountID">3bf408c0-98ac-47c0-b2e7-f58411cc9a95</string>
+    <string name="accountKey">0htjl/LkZy7rhj1Gz0x5k3grkry7tfa39WFrSPCn67s=</string>
+    <string name="accountDomain">westeurope.mixedreality.azure.com</string>
+    <string name="anchor_csv">anchors.csv</string>
+</resources>

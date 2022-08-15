@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="425dp"
+        android:layout_height="229dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278"
+        tools:ignore="MissingConstraints">
+
+        <yuru.ikg.ethz.lbsproject.RadarDisplay
+            android:id="@+id/radarDisplay"
+            android:layout_width="226dp"
+            android:layout_height="229dp"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/targetLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="TextView"
+        android:textFontWeight="5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/targetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Target Location"
+        android:textFontWeight="3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AR_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="AR View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mapViewButton"
+        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/mapViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="24dp"
+        android:text="Map View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TableLayout
+        android:layout_width="259dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/table_blue">
+
+            <TextView
+                android:id="@+id/tmpCol"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:text="Temperature" />
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:text="Temperature" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/table_purple">
+
+            <TextView
+                android:id="@+id/timeCol"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:text="Time" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:text="Time" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/table_blue">
+
+            <TextView
+                android:id="@+id/distanceCol"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:text="Distance" />
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:text="distance" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/table_purple">
+
+            <TextView
+                android:id="@+id/speedCol"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:text="Speed" />
+
+            <TextView
+                android:id="@+id/speed"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:text="speed" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonHelp"
+        android:layout_width="74dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="Help"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
